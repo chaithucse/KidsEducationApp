@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.neha.edu.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/button_letters"
+            app:destination="@id/lettersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_numbers"
+            app:destination="@id/numbersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_shapes"
+            app:destination="@id/shapesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_colors"
+            app:destination="@id/colorsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_body"
+            app:destination="@id/bodyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_fruits"
+            app:destination="@id/fruitsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_animals"
+            app:destination="@id/animalsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/button_vege"
+            app:destination="@id/vegeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/lettersFragment"
+        android:name="com.neha.edu.LettersFragment"
+        android:label="Alphabets" />
+    <fragment
+        android:id="@+id/numbersFragment"
+        android:name="com.neha.edu.NumbersFragment"
+        android:label="Numbers" />
+    <fragment
+        android:id="@+id/colorsFragment"
+        android:name="com.neha.edu.ColorsFragment"
+        android:label="Colors" />
+    <fragment
+        android:id="@+id/shapesFragment"
+        android:name="com.neha.edu.ShapesFragment"
+        android:label="Shapes" />
+    <fragment
+        android:id="@+id/bodyFragment"
+        android:name="com.neha.edu.BodyFragment"
+        android:label="Human Body parts" />
+    <fragment
+        android:id="@+id/fruitsFragment"
+        android:name="com.neha.edu.FruitsFragment"
+        android:label="Fruits" />
+    <fragment
+        android:id="@+id/animalsFragment"
+        android:name="com.neha.edu.AnimalsFragment"
+        android:label="Animals" />
+    <fragment
+        android:id="@+id/vegeFragment"
+        android:name="com.neha.edu.VegeFragment"
+        android:label="Vegetables" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.neha.edu.AboutFragment"
+        android:label="About" />
+</navigation>
